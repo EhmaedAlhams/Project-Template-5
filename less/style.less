@@ -1,3 +1,106 @@
-div {
-    background-color: coral;
+// SECTION: Main Variable Code
+
+@primary-color: #FFFFFF;
+@second-color: #111827;
+@third-color: #F9FAFB;
+@num: 0;
+
+// SECTION: Main Variable Code
+
+// SECTION: Global coder rule
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+// SECTION: Global coder rule
+
+html {
+    scroll-behavior: smooth;
+
+    body {
+        font-family: "Inter", sans-serif;
+        color: @second-color;
+
+        .container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                width: 750px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .container {
+                width: 970px;
+            }
+        }
+
+        @media (min-width: 1200px) {
+            .container {
+                width: 1170px;
+            }
+        }
+    }
+}
+
+/* SECTION: Main Component  */
+
+header {
+    background-color: @primary-color;
+    padding: 20px 30px;
+    height: 72px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    a {
+        text-decoration: none;
+        display: block;
+        color: @second-color;
+    }
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .container a.logo {
+        font-size: @num + 40px;
+        font-weight: bold;
+    }
+
+    .container .nav ul {
+        display: flex;
+        gap: 27px;
+    }
+
+    & li {
+        padding: (@num + 10px) (@num + 20px);
+        transition: @num + .3s;
+
+        &:hover {
+            background-color: #DDD;
+        }
+    }
+
+    & a.contact-us {
+        padding: (@num + 10px) (@num + 20px);
+        color: @primary-color;
+        background-color: @second-color;
+        border-radius: 6px;
+    }
+}
+
+/* SECTION: Main Component  */
