@@ -294,9 +294,9 @@ header {
 
     & p {
         .p();
-        width: 600px;
+        width: 650px;
         line-height: 24.2px;
-        padding: 50px;
+        padding: 35px;
         display: inline-block;
     }
 
@@ -427,6 +427,7 @@ header {
     .about-us();
 
     position: relative;
+
     & #testimonials-body .owl-nav {
 
 
@@ -496,5 +497,96 @@ header {
 }
 
 // SECTION: Testimonials
+
+// SECTION: FAQs
+
+
+.FAQs {
+    .about-us();
+
+    ul.accordion-list {
+        text-align: start;
+        position: relative;
+        display: block;
+        width: 70%;
+        height: auto;
+        padding: 20px;
+        margin: 0;
+        list-style: none;
+        background-color: #f9f9fA;
+        margin-left: auto;
+        margin-right: auto;
+
+        li {
+            position: relative;
+            display: block;
+            width: 100%;
+            height: auto;
+            background-color: #FFF;
+            padding: 20px;
+            margin: 0 auto 15px auto;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &.active {
+                h3 {
+                    &:after {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+
+            h3 {
+                font-weight: 700;
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;
+                padding: 0 0 0 0;
+                margin: 0;
+                font-size: 18px;
+                letter-spacing: 0.01em;
+                cursor: pointer;
+
+                &:after {
+                    content: "\2b";
+                    font-family: "Font Awesome 6 Free";
+                    font-weight: 900;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    color: @second-color;
+                    transition: all 0.3s ease-in-out;
+                    font-size: 18px;
+                }
+            }
+
+            div.answer {
+                position: relative;
+                display: block;
+                width: 100%;
+                height: auto;
+                margin: 0;
+                padding: 0;
+                cursor: pointer;
+
+                p {
+                    position: relative;
+                    display: block;
+                    font-weight: 300;
+                    padding: 10px 0 0 0;
+                    cursor: pointer;
+                    line-height: 150%;
+                    margin: 0 0 15px 0;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+
+// SECTION: FAQs
+
 
 /* SECTION: Main Component  */
