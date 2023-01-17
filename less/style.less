@@ -3,6 +3,7 @@
 @primary-color: #FFFFFF;
 @second-color: #111827;
 @third-color: #F9FAFB;
+@fourth-color: #F3F4F6;
 @font-p: #6D7280;
 @bg: #F9FAFB;
 @num: 0;
@@ -419,5 +420,81 @@ header {
 
 
 // SECTION: Our-Services 
+
+// SECTION: Testimonials
+
+.testimonials {
+    .about-us();
+
+    position: relative;
+    & #testimonials-body .owl-nav {
+
+
+        & .owl-stage-outer .owl-stage .owl-item .active {
+            width: 545px !important;
+        }
+
+        & .owl-prev {
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            background-color: @fourth-color;
+            // border-radius: 50%;
+            // width: 20px;
+            // height: 20px;
+        }
+
+        & .owl-next {
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 40px;
+            background-color: @fourth-color;
+            // border-radius: 50%;
+            // width: 20px;
+            // height: 20px;
+        }
+    }
+
+    & #testimonials-body .item {
+        background-color: @fourth-color;
+        padding-block: 30px;
+        width: 80%;
+        height: 372px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    & #testimonials-body .text p {
+        width: 100%;
+        font-weight: bold;
+        color: @second-color;
+    }
+
+    & #testimonials-body .text i {
+        display: flex;
+        background-color: #E5E7EB;
+        width: 65px;
+        height: 64px;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 50%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    #testimonials-body .text span {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: 10px;
+    }
+
+}
+
+// SECTION: Testimonials
 
 /* SECTION: Main Component  */
