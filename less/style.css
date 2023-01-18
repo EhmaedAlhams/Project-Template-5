@@ -198,7 +198,7 @@ header a.contact-us {
 }
 .about-us {
   text-align: center;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 .about-us h2 {
   font-size: 60px;
@@ -302,7 +302,7 @@ header a.contact-us {
 }
 .testimonials {
   text-align: center;
-  margin-top: 70px;
+  padding-top: 70px;
   position: relative;
 }
 .testimonials h2 {
@@ -406,7 +406,7 @@ header a.contact-us {
 }
 .FAQs {
   text-align: center;
-  margin-top: 70px;
+  padding-top: 70px;
 }
 .FAQs h2 {
   font-size: 60px;
@@ -530,7 +530,7 @@ header a.contact-us {
 }
 .contact-us {
   text-align: center;
-  margin-top: 70px;
+  padding-top: 70px;
   background-color: #F3F4F6;
   padding: 70px 0;
 }
@@ -604,6 +604,7 @@ header a.contact-us {
 .contact-us .form form textarea {
   width: 100%;
   padding: 10px;
+  resize: none;
 }
 .contact-us .form form input[type="button"],
 .contact-us .form form input[type="reset"] {
@@ -618,5 +619,14 @@ header a.contact-us {
 .contact-us .form form input[type="reset"] {
   background-color: #E5E7EB;
   color: #111827;
+}
+header p {
+  margin: 20px 0;
+  text-align: center;
+  display: block;
+  width: 100%;
+}
+header .contact i {
+  margin: 15px;
 }
 /* SECTION: Main Component  */
