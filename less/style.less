@@ -357,7 +357,6 @@ header {
 // SECTION: Our-Services 
 
 .our-services {
-
     background-color: @bg;
 
     & .head-services {
@@ -493,7 +492,6 @@ header {
         font-weight: 600;
         margin-top: 10px;
     }
-
 }
 
 // SECTION: Testimonials
@@ -587,6 +585,60 @@ header {
 }
 
 // SECTION: FAQs
+
+// SECTION: Contact-Us
+
+
+.contact-us {
+    .about-us();
+    background-color: @fourth-color;
+    padding: 70px 0;
+
+    & .form {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    & .form form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        & input[name="name"],
+        & input[name="password"] {
+            color: @second-color;
+            width: 49.3%;
+            padding: 10px
+        }
+
+        & input[name="subject"],
+        & textarea {
+            width: 100%;
+            padding: 10px;
+        }
+
+        & input[type="button"],
+        & input[type="reset"] {
+            padding: 10px 55px;
+            border-radius: 6px;
+            border: none;
+        }
+
+        & input[type="button"] {
+            background-color: @second-color;
+            color: @third-color;
+        }
+
+        & input[type="reset"] {
+            background-color: #E5E7EB;
+            color: @second-color;
+        }
+
+    }
+}
+
+// SECTION: Contact-Us
 
 
 /* SECTION: Main Component  */
