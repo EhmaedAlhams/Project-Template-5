@@ -105,7 +105,7 @@ header {
         justify-content: space-between;
         align-items: center;
 
-        @media (min-width: @sizes[sm]) and (max-width: @sizes[lg]) {
+        @media (max-width: @sizes[lg]) {
             & {
                 display: flex;
                 // justify-content: space-between;
@@ -128,12 +128,23 @@ header {
         display: flex;
         gap: @num + 27px;
 
-        @media (min-width: @sizes[sm]) and (max-width: @sizes[lg]) {
+        @media (max-width: @sizes[lg]) {
+            .container {
+                @media (max-width: @sizes[md]) {
+                    & {
+                        display: flex;
+                        // justify-content: space-between;
+                        align-items: center;
+                        flex-direction: column;
+                    }
+                }
+            }
+
             & {
                 background-color: @third-color;
                 gap: 0;
                 margin-top: @num + 14px;
-                padding: 20px;
+                padding: 0;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -157,7 +168,7 @@ header {
         background-color: @second-color;
         border-radius: 6px;
 
-        @media (min-width: @sizes[sm]) and (max-width: @sizes[lg]) {
+        @media (max-width: @sizes[lg]) {
             & {
                 display: none;
             }
@@ -269,11 +280,12 @@ header {
 
         @media (max-width: @sizes[lg]) {
             & {
-                position: absolute;
-                left: 50%;
-                transform: translate(-50%, -50%);
-                width: 70%;
-                top: 59%;
+                // position: absolute;
+                // left: 50%;
+                // transform: translate(-50%, -50%);
+                // width: 70%;
+                // top: 59%;
+                display: none;
             }
         }
     }
@@ -300,6 +312,14 @@ header {
         display: inline-block;
     }
 
+    @media (max-width: @sizes[lg]) {
+
+        & h2,
+        & p {
+            width: auto;
+        }
+    }
+
     & .items {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
@@ -309,6 +329,7 @@ header {
             & {
                 display: flex;
                 flex-wrap: wrap;
+                justify-content: center;
             }
 
             & .item {
@@ -339,6 +360,12 @@ header {
                 align-items: center;
                 align-content: center;
                 justify-content: center;
+
+                @media (max-width: @sizes[lg]) {
+                    & {
+                        width: 70%;
+                    }
+                }
             }
         }
 
@@ -347,6 +374,20 @@ header {
     & .items .item img {
         width: 460px;
         height: 300.23px;
+
+        @media (max-width: @sizes[lg]) {
+            & {
+                max-width: 70%;
+                height: auto;
+            }
+        }
+
+        @media (min-width: @sizes[md]) {
+            & {
+                max-width: 50%;
+                height: auto;
+            }
+        }
     }
 }
 
@@ -370,6 +411,12 @@ header {
 
         & p {
             padding: 30px 0 30px 0;
+        }
+
+        @media (max-width: @sizes[lg]) {
+            & {
+                width: 100%
+            }
         }
     }
 
@@ -515,6 +562,12 @@ header {
         margin-left: auto;
         margin-right: auto;
 
+        @media (max-width: @sizes[lg]) {
+            & {
+                width: 100%
+            }
+        }
+
         li {
             position: relative;
             display: block;
@@ -605,11 +658,23 @@ header {
         flex-wrap: wrap;
         gap: 10px;
 
+        @media (max-width: @sizes[lg]) {
+            & {
+                width: 100%
+            }
+        }
+
         & input[name="name"],
         & input[name="password"] {
             color: @second-color;
             width: 49.3%;
-            padding: 10px
+            padding: 10px;
+
+            @media (max-width: @sizes[lg]) {
+                & {
+                    width: 100%
+                }
+            }
         }
 
         & input[name="subject"],
